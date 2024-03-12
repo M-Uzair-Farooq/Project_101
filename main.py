@@ -1,14 +1,13 @@
+from scapy.all import sniff, IP, ICMP
 
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def icmp_packet_summary(packet):
+    if IP in packet and ICMP in packet:
+        print(packet.summary())
+
+interface_name = "Wi-Fi"
+
+capture_filter = "icmp"
+
+sniff(iface=interface_name, prn=icmp_packet_summary, filter=capture_filter)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Uzair Farooq ')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
