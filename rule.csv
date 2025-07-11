@@ -1,4 +1,0 @@
-RuleID,Direction,SourceIP,DestinationIP,SourcePort,DestinationPort,Flags,ThresholdCount,ThresholdSeconds
-1,inbound,*,*,*,*,*,10,5
-2,inbound,192.168.13.4,*,5000,*,*,15,5
-3,inbound,*,*,*,8800,*,30,5
