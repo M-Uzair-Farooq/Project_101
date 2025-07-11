@@ -102,11 +102,4 @@ This is a project built for educational purposes. Modifying `iptables` and using
 
 ---
 
-## 👤 Author
-
-**M. Uzair Farooq**  
-ID: 231338  
-Supervised by: Dr. Kashif  
-Course: Object Oriented Programming (OOP)  
-Date: 24-May-2024
 
