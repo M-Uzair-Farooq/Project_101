@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Logs</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Rule ID</th>
+                    <th>Source IP</th>
+                    <th>Destination IP</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                    <tr>
+                        <td>{{ log.attr1 }}</td>
+                        <td>{{ log.attr2 }}</td>
+                        <td>{{ log.attr3 }}</td>
+                        <td>{{ log.attr4 }}</td>
+                        <td>{{ log.attr5 }}</td>
+                        <td>{{ log.attr6 }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
+

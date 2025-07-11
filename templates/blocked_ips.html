@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Blocked IPs</h1>
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Blocked Ip</th>
+            <th>Rule id</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ip in blocked_ips %}
+        <tr>
+            <td>{{ loop.index  }}</td>
+            <td>{{ ip }}</td>
+            <td> 1 </td> 
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+
+ 

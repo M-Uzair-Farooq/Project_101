@@ -1,0 +1,2 @@
+RuleID,Direction,SourceIP,DestinationIP,SourcePort,DestinationPort,Flags,ThresholdCount,ThresholdSeconds
+1,inbound,*,*,*,*,*,10,5
