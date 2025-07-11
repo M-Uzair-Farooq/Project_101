@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Rules</h1>
+<table>
+    <thead>
+        <tr>
+            <th>RuleID</th>
+            <th>Direction</th>
+            <th>SourceIP</th>
+            <th>DestinationIP</th>
+            <th>SourcePort</th>
+            <th>DestinationPort</th>
+            <th>Flags</th>
+            <th>ThresholdCount</th>
+            <th>ThresholdSeconds</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rule in rules %}
+        <tr>
+            <td>{{ rule.RuleID }}</td>
+            <td>{{ rule.Direction }}</td>
+            <td>{{ rule.SourceIP }}</td>
+            <td>{{ rule.DestinationIP }}</td>
+            <td>{{ rule.SourcePort }}</td>
+            <td>{{ rule.DestinationPort }}</td>
+            <td>{{ rule.Flags }}</td>
+            <td>{{ rule.ThresholdCount }}</td>
+            <td>{{ rule.ThresholdSeconds }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
